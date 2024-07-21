@@ -1,0 +1,297 @@
+.portfolio-section {
+  text-align: center;
+  padding: 4vh;
+  color: #343a40;
+}
+
+.portfolio-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #f3f7fa;
+  text-transform: uppercase;
+}
+
+.portfolio-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-item {
+  background-color: rgb(218, 242, 242);
+  border: 1px solid #ddd;
+  border-radius: 2.5rem;
+  width: calc(28% - 20px);
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Ensure buttons are fixed at the bottom */
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+}
+
+.portfolio-thumbnail {
+  width: 70%;
+  height: auto;
+  border-radius: 2.5rem;
+}
+
+.portfolio-info {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.portfolio-info h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #343a40;
+}
+
+.portfolio-info p {
+  font-size: 1em;
+  color: #6c757d;
+  margin: 10px 0;
+}
+
+.portfolio-tags {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-tags span {
+  background-color: #17a2b8;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 0.875em;
+}
+
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.portfolio-buttons .btn {
+  background-color: #28a745;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 0.875em;
+}
+
+.portfolio-buttons .btn-demo {
+  background-color: #007bff;
+}
+
+.portfolio-buttons .btn-more {
+  background-color: #6c757d;
+}
+
+.portfolio-buttons .btn:hover {
+  opacity: 0.8;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination .active {
+  background-color: #0056b3;
+  font-weight: bold;
+}
+
+.portfolio-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.portfolio-pagination button,
+.portfolio-pagination span {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.portfolio-pagination button[disabled],
+.portfolio-pagination span.active {
+  background-color: #0056b3;
+  cursor: default;
+}
+
+.portfolio-pagination button:hover:not([disabled]),
+.portfolio-pagination span:hover:not(.active) {
+  background-color: #0056b3;
+}
+
+/* Modal overlay to cover the entire screen */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* Ensure the body doesn't scroll when the modal is open */
+:host {
+  overflow: hidden;
+}
+
+.project-detail {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.project-thumbnail {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #343a40;
+}
+
+.project-description p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.tags {
+  margin-top: 20px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #17a2b8;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ff0000;
+}
+
+.btn-demo {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-demo:hover {
+  background-color: #0056b3;
+}
+
+.btn-close {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-close:hover {
+  background-color: #cc0000;
+}
+
+/* Prevent body scrolling when the modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Hide the footer when the hidden class is applied */
+footer.hidden {
+  display: none;
+}

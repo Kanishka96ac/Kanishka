@@ -1,0 +1,71 @@
+.dialog-content {
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .project-thumbnail {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+  
+  .tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .tags span {
+    background-color: #17a2b8;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 0.875em;
+  }
+  
+  .dialog-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 0.875em;
+    cursor: pointer;
+  }
+  
+  .btn-demo {
+    background-color: #007bff;
+  }
+  
+  .btn-close {
+    background-color: #dc3545;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  

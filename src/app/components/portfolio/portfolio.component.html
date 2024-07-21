@@ -1,0 +1,28 @@
+<div class="portfolio-section" id="portfolio">
+  <h1>Projects</h1>
+  <div class="portfolio-container">
+    <div class="portfolio-list">
+      <div class="portfolio-item" *ngFor="let project of visibleProjects">
+        <img [src]="project.thumbnail" [alt]="project.name" class="portfolio-thumbnail">
+        <div class="portfolio-info">
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.description }}</p>
+          <div class="portfolio-tags">
+            <span *ngFor="let tag of project.tags">{{ tag }}</span>
+          </div>
+        </div>
+        <div class="portfolio-buttons">
+          <a [href]="project.demoLink" class="btn btn-demo">Demo</a>
+          <button class="btn btn-more" (click)="openProjectDetail(project)">More</button>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-pagination">
+      <button (click)="prevPage()" [disabled]="currentPage === 0">&lt;</button>
+      <span *ngFor="let page of getPages()" [class.active]="page === currentPage" (click)="goToPage(page)">
+        {{ page + 1 }}
+      </span>
+      <button (click)="nextPage()" [disabled]="currentPage === totalPages - 1">&gt;</button>
+    </div>
+  </div>
+</div>

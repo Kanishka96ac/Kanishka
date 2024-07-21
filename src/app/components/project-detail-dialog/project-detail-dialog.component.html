@@ -1,0 +1,14 @@
+<div class="dialog-content">
+    <button class="close-button" (click)="onClose()">&times;</button>
+    <h2>{{ data.name }}</h2>
+    <img [src]="data.thumbnail" alt="{{ data.name }}" class="project-thumbnail">
+    <p>{{ data.description }}</p>
+    <div class="tags">
+      <span *ngFor="let tag of data.tags">{{ tag }}</span>
+    </div>
+    <div class="dialog-actions">
+      <a [href]="data.demoLink" class="btn btn-demo" target="_blank">Demo</a>
+      <button class="btn btn-close" (click)="onClose()">Close</button>
+    </div>
+  </div>
+  

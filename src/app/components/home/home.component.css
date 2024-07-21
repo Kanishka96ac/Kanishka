@@ -1,0 +1,97 @@
+.home-container{
+    /* background: radial-gradient(circle, #6f42c1 0%, #362238 80%); */
+    padding-bottom: 0px;
+  }
+  
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2px;
+  /* background: linear-gradient(135deg, #6f42c1, #ff8c00); */
+  /* background: linear-gradient(135deg, #1b1c55, #9facbe); */
+  color: #fff;
+  min-height: 40vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 0px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 85vW;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 0px;
+}
+
+.intro-photo {
+  flex: 0 1 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+  transition: transform 0.3s;
+}
+
+.animated-photo {
+  animation: slide-in 3s infinite;
+}
+
+@keyframes slide-in {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+/**** hr Styles ****/
+/* Container to center the line */
+.line-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 12vh; /* Adjust as needed */
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+/* Fancy Line style */
+.fancy-line {
+  width: 100%;
+  height: 100px; /* Adjust as needed */
+  fill: none;
+  stroke: rgba(255, 0, 0, 0.7); /* Line color */
+  stroke-width: 5;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 5s linear infinite, shine 5s infinite;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes shine {
+  0% {
+    stroke: rgba(255, 215, 0, 0.7); /* Initial shine color */
+  }
+  50% {
+    stroke: rgba(255, 0, 0, 0.7); /* Mid shine color */
+  }
+  100% {
+    stroke: rgba(33, 12, 150, 0.7); /* End shine color */
+  }
+}
+

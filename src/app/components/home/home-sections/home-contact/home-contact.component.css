@@ -1,0 +1,231 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #9a9b9c, 0 0 10px #9a9b9c, 0 0 15px #9a9b9c, 0 0 20px #9a9b9c;
+  }
+  50% {
+    box-shadow: 0 0 10px #e7f1fc, 0 0 20px #e7f1fc, 0 0 30px #e7f1fc, 0 0 40px #e7f1fc;
+  }
+  100% {
+    box-shadow: 0 0 5px #9a9b9c, 0 0 10px 9a9b9c#9a9b9c, 0 0 15px #9a9b9c, 0 0 20px #9a9b9c;
+  }
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  animation: fadeIn 1.5s ease-in-out;
+  margin: 0;;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 70vw;
+  width: 100%;
+  background-color: #120336; /* Changed to black background */
+  border-radius: 20px;
+  padding: 30px;
+  animation: fadeIn 1.5s ease-in-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  color: #fff; /* Adjusted text color */
+  border: 2px solid transparent;
+  animation: glow 2s infinite alternate; /* Added glowing animation */
+}
+
+.contact-left, .contact-right {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+.contact-left {
+  text-align: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2em;
+}
+
+.contact-item a {
+  color: #fff; /* Adjusted text color */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  color: #0056b3;
+}
+
+.contact-item i.fa-phone {
+  color: #c2bfbf;
+}
+
+.contact-item i.fa-whatsapp {
+  color: #25d366;
+}
+
+.contact-item i.fa-envelope {
+  color: #383b3f;
+}
+
+.contact-item i.fa-map-marker-alt {
+  color: #dc3545;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+.social-media-icons a {
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.social-media-icons a:hover {
+  color: #0056b3;
+}
+
+.social-media-icons a i.fa-linkedin {
+  color: #0077b5;
+}
+
+.social-media-icons a i.fa-github {
+  color: #333;
+}
+
+.social-media-icons a i.fa-twitter {
+  color: #1da1f2;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1.5s ease-in-out;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  color: #fff; /* Adjusted label color */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #333; /* Changed background color of inputs */
+  color: #fff; /* Adjusted text color of inputs */
+}
+
+.form-group input:invalid,
+.form-group textarea:invalid {
+  border-color: #d9534f;
+}
+
+.form-group input:valid,
+.form-group textarea:valid {
+  border-color: #28a745;
+}
+
+.error-message {
+  color: #d9534f;
+  font-size: 0.9em;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  display: none;
+}
+
+.form-group input.ng-invalid.ng-touched + .error-message,
+.form-group textarea.ng-invalid.ng-touched + .error-message {
+  display: block;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:disabled {
+  background-color: #6c757d;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.error {
+  background-color: #d9534f;
+  color: #fff;
+}

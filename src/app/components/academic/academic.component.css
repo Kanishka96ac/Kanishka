@@ -1,0 +1,116 @@
+/* Academic Detail Section */
+
+.academic-detail-section {
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  text-align: center;
+  padding: 4vh;
+  color: #343a40;
+}
+
+.academic-detail-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #343a40;
+}
+
+.academic-detail-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.academic-detail-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%;
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.academic-detail-item:hover {
+  transform: translateY(-10px);
+}
+
+.academic-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.academic-detail-info {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.academic-heading h3 {
+  font-size: 1.25em;
+  margin: 0;
+  color: #343a40;
+}
+
+.academic-heading h4 {
+  font-size: 1em;
+  margin: 5px 0;
+  color: #343a40;
+}
+
+.academic-heading p {
+  font-size: 0.875em;
+  margin: 5px 0;
+  color: #6c757d;
+}
+
+.academic-detail-info ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  color: #343a40;
+}
+
+.academic-detail-info ul li {
+  font-size: 0.875em;
+  margin-bottom: 5px;
+}
+
+.academic-detail-section .btn {
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.academic-detail-section .btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .academic-detail-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .academic-detail-item {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .academic-logo {
+    margin-bottom: 10px;
+  }
+
+  .academic-detail-info ul {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,26 @@
+<div id="experience" class="experience-section">
+    <h2>Professional Experience</h2>
+    <div class="experience-container">
+        <div class="experience-item" *ngFor="let experience of experiences">
+            <div class="company-logo">
+                <img [src]="experience.logo" [alt]="experience.company + ' Logo'" />
+            </div>
+            <div class="experience-details">
+                <h3>
+                    <span class="company-name">{{ experience.company }}</span>
+                </h3>
+                <span class="location">{{ experience.location }}</span>
+                <p><strong>{{ experience.position }}</strong> | {{ experience.duration }}</p>
+                <p *ngIf="experience.profile" class="company-profile">
+                    {{ experience.profile }}
+                </p>
+                <ul class="experience-achievements">
+                    <li *ngFor="let achievement of experience.achievements">{{ achievement }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a routerLink="/experience" class="btn btn-info">
+        <i class="fas fa-arrow-right"></i>
+    </a>
+</div>

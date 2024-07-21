@@ -1,0 +1,142 @@
+.skills-section {
+    padding-bottom: 0px;
+    margin: 40px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 5vh;
+    color: #f3f7fa;
+    text-transform: uppercase;
+    animation: fadeInDown 1s ease-in-out;
+  }
+
+.skills-category {
+    margin-bottom: 40px;
+}
+
+.skills-category h3 {
+    font-size: 1.75rem;
+    color: #fff; /* White color for text to stand out against the background */
+    margin-bottom: 20px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.skills-category h3::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: #3498db; /* Accent color for the underline */
+    border-radius: 5px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Reduced gap for a tighter layout */
+    justify-content: center;
+    animation: fadeInUp 1s ease-in-out;
+    padding-top: 4vh;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-logo {
+    background-color: #000; /* Black background for skill circles */
+    padding: 15px; /* Reduced padding for a smaller circle */
+    border-radius: 50%;
+    text-align: center;
+    width: 80px; /* Reduced size for a smaller circle */
+    height: 80px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 3s infinite; /* Slowed pulse animation */
+    margin-bottom: 10px; /* Space for the name */
+}
+
+.skill-logo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.skill-logo img {
+    width: 50px; /* Reduced size for better visibility */
+    height: 50px;
+    border-radius: 10px; /* Added a slight border radius for a modern touch */
+    transition: transform 0.3s;
+}
+
+.skill-logo img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.skill-name {
+    color: #fff; /* White text color for contrast */
+    font-size: 14px; /* Adjusted font size */
+    font-weight: 500;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

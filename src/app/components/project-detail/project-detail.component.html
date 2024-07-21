@@ -1,0 +1,19 @@
+<div class="project-detail" *ngIf="project">
+    <button class="close-button" (click)="onClose()">&times;</button>
+    <div class="project-header">
+      <img [src]="project.thumbnail" alt="{{ project.name }}" class="project-thumbnail">
+      <h2>{{ project.name }}</h2>
+    </div>
+    <div class="project-description">
+      <p *ngFor="let desc of project.description">{{ desc }}</p>
+    </div>
+    <div class="tags">
+      <span *ngFor="let tag of project.tags">{{ tag }}</span>
+    </div>
+    <div class="dialog-actions">
+      <a [href]="project.demoLink" class="btn btn-demo" target="_blank">Demo</a>
+      <button class="btn btn-closed" (click)="onClose()">Close</button>
+    </div>
+  </div>
+  <div class="modal-overlay" (click)="onClose()" *ngIf="project"></div>
+  

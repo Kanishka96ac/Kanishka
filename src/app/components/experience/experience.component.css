@@ -1,0 +1,122 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Experience Section */
+.experience-section {
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+.experience-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #f3f7fa;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Container for Experience Items */
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual Experience Item */
+.experience-item {
+  background-color: rgb(218, 242, 242);
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 15px;
+  width: calc(33.33% - 20px); /* 3 items per row */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Company Header */
+.company-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.company-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.company-logo img {
+  width: 100%;
+  height: auto;
+}
+
+/* Company Name and Location */
+.company-name {
+  font-size: 1.2em;
+  color: #007bff;
+  margin: 0;
+}
+
+.location {
+  font-size: 0.9em;
+  color: #666;
+  display: block;
+}
+
+/* Job Title and Duration */
+.experience-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Achievements List */
+.experience-achievements {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  color: #444;
+}
+
+.experience-achievements li {
+  margin: 5px 0;
+  padding: 5px 0 5px 25px; /* Increased padding-left to align text with bullet */
+  position: relative;
+}
+
+.experience-achievements li::before {
+  content: '✔';
+  color: #007bff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(25%); /* Adjusted to vertically align the bullet */
+}
+
+/* Button */
+.btn-info {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-info:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,134 @@
+/* Academic Section */
+.academic-section {
+  text-align: center;
+  padding: 4vh;
+  color: #343a40;
+  position: relative; /* Added to position the button */
+}
+
+.academic-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #f3f7fa;
+  text-transform: uppercase;
+}
+
+.academic-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.academic-item {
+  background-color: rgb(218, 242, 242);
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+  padding: 20px;
+  width: 100%;
+  max-width: 35vw;
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.academic-item:hover {
+  transform: translateY(-10px);
+}
+
+.academic-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.academic-info {
+  text-align: left;
+}
+
+.academic-heading h3 {
+  font-size: 1.25em;
+  margin: 0;
+  color: #343a40;
+  font-weight: bolder;
+}
+
+.academic-heading h4 {
+  font-size: 1em;
+  margin: 5px 0;
+  color: #343a40;
+}
+
+.academic-heading p {
+  font-size: 0.875em;
+  margin: 5px 0;
+  color: #6c757d;
+}
+
+.academic-info p {
+  font-size: 0.875em;
+  margin-bottom: 10px;
+  color: #6c757d;
+}
+
+.grade {
+  font-weight: bolder;
+  color: #033163 !important;
+  font-size: 1.5rem;
+}
+
+.details {
+  color: black !important;
+  font-weight: 500;
+}
+
+.academic-section .btn-info {
+  position: absolute;
+  bottom: 20px; /* Adjust position as needed */
+  right: 20px;  /* Adjust position as needed */
+  background-color: #3709b4;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 1rem;
+  font-size: 1em;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.academic-section .btn-info:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.academic-section .btn-info i {
+  margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .academic-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .academic-item {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .academic-logo {
+      margin-bottom: 10px;
+  }
+
+  .academic-info {
+      text-align: center;
+  }
+
+  .academic-section .btn-info {
+      bottom: 10px; /* Adjust position for smaller screens */
+      right: 10px;  /* Adjust position for smaller screens */
+  }
+}

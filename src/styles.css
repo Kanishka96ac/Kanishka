@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 56px; /* Adjust this based on your navbar height */
+  background: linear-gradient(135deg, #64768f, #010549);
+}
+
+.cdk-overlay-container {
+  position: fixed;
+  z-index: 1000;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff; /* Default color */
+  transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffd700; /* Hover color - gold */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #ffd700; /* Active color - gold */
+  font-weight: bold; /* Optional: Bold font for active link */
+}
+
+.navbar-dark .navbar-nav .nav-link i {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-content {
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  color: white;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #007bff;
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Prevent body scrolling when the modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Hide the footer when the hidden class is applied */
+footer.hidden {
+  display: none;
+}

@@ -1,0 +1,20 @@
+<div class="experience-section">
+    <h1>Professional Experience</h1>
+    <div class="experience-container">
+      <div class="experience-item" *ngFor="let experience of experiences">
+        <div class="company-header">
+          <div class="company-logo">
+            <img [src]="experience.logo" [alt]="experience.company + ' Logo'" />
+          </div>
+          <h3 class="company-name">{{ experience.company }}</h3>
+        </div>
+        <span class="location">{{ experience.location }}</span>
+        <p><strong>{{ experience.position }}</strong> | {{ experience.period }}</p>
+        <p>{{ experience.description }}</p>
+        <ul class="experience-achievements">
+          <li *ngFor="let achievement of experience.achievements">{{ achievement }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  

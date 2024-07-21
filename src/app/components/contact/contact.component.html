@@ -1,0 +1,63 @@
+<div id="contact" class="contact-wrapper">
+  <div class="contact-content">
+    <div class="contact-left">
+      <h1>Get in Touch</h1>
+      <img src="../../../../../assets/images/dp.png" alt="Profile Picture" class="profile-picture">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:+447497379036">+44 7497379036</a>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-whatsapp"></i>
+          <a href="https://wa.me/447497379036" target="_blank">+44 7497379036</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:kanishka96se@gmail.com">kanishka96se@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>London, United Kingdom</span>
+        </div>
+        <div class="social-media-icons">
+          <a href="https://www.linkedin.com/in/kanishka96/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Kanishka96ac" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-right">
+      <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" ngModel required placeholder="Your Name">
+          <div class="error-message" *ngIf="contactForm.controls['name']?.invalid && contactForm.controls['name']?.touched">
+            Name is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" ngModel required placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address">
+          <div class="error-message" *ngIf="contactForm.controls['email']?.invalid && contactForm.controls['email']?.touched">
+            Valid email is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" ngModel required placeholder="Your Message"></textarea>
+          <div class="error-message" *ngIf="contactForm.controls['message']?.invalid && contactForm.controls['message']?.touched">
+            Message is required
+          </div>
+        </div>
+        <button type="submit" class="btn" [disabled]="!contactForm.valid">Send Message</button>
+      </form>
+      <div *ngIf="successMessage" class="message success">
+        {{ successMessage }}
+      </div>
+      <div *ngIf="errorMessage" class="message error">
+        {{ errorMessage }}
+      </div>
+    </div>
+  </div>
+</div>

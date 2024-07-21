@@ -1,0 +1,22 @@
+.footer {
+  background-color: #272829;
+  color: white;
+  padding: 2vh 0;
+}
+
+.footer-content {
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  color: white;
+  margin: 0 10px;
+  transition: color 0.3s, transform 0.3s;
+  text-decoration: none; /* Remove underline */
+}
+
+.social-icon:hover {
+  color: #007bff;
+  cursor: pointer; /* Pointer cursor on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}

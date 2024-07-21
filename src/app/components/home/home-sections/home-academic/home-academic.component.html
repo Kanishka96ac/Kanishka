@@ -1,0 +1,21 @@
+<!-- Academic Section -->
+<div id="academic" class="academic-section">
+    <h2>Academic Background</h2>
+    <div class="academic-list">
+        <div class="academic-item" *ngFor="let academic of academics">
+            <img [src]="academic.logo" [alt]="academic.institution + ' Logo'" class="academic-logo">
+            <div class="academic-info">
+                <div class="academic-heading">
+                    <h3>{{ academic.institution }}</h3>
+                    <h4>{{ academic.degree }}</h4>
+                    <p>{{ academic.duration }}</p>
+                </div>
+                <p class="grade">Grade: {{ academic.grade }}</p>
+                <p class="details">{{ academic.details }}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="/academic" class="btn btn-info">
+        <i class="fas fa-arrow-right"></i>
+    </a>
+</div>

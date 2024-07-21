@@ -1,0 +1,120 @@
+/* Ensure the body doesn't scroll when the modal is open */
+:host {
+    overflow: hidden;
+  }
+  
+  .project-detail {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(218, 242, 242);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .project-header h2{
+    margin-right: 1.5vw;
+    text-transform: capitalize;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .project-thumbnail {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .project-description p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .tags {
+    margin-top: 20px;
+  }
+  
+  .tags span {
+    display: inline-block;
+    background: #17a2b8;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 2px;
+  }
+  
+  .dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #ff0000;
+  }
+  
+  .btn-demo {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-demo:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-closed{
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-close:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Modal overlay to cover the entire screen */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
