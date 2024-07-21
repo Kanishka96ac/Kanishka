@@ -11,7 +11,7 @@ export class PortfolioComponent implements OnInit {
   projects: Project[] = [
     {
       id: 1,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Classification Brain Tumour Using Data Science Techniques',
       description: ['Allows users to upload MRI scans for analysis and receive tumour status.'],
       tags: ['Python', 'Data Science', 'SVM', 'CNN'],
@@ -20,7 +20,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 2,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'File Monitoring System for PROTEGER',
       description: ['Developed a real-time file monitoring system using React, Express.js, and Node.js.'],
       tags: ['React', 'Express.js', 'Node.js'],
@@ -29,7 +29,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 3,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Smart Lock for Baggage',
       description: ['Developed a smart baggage lock with a tracking system using Arduino and a GSM module.'],
       tags: ['Arduino', 'GSM Module', 'Google Place API', 'PHP'],
@@ -38,7 +38,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 4,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Supermarket Locator',
       description: ['Utilised Google Place API to display nearby supermarkets based on current location.'],
       tags: ['Android Studio', 'Java', 'Google Place API', 'Postman'],
@@ -47,7 +47,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 5,
-      thumbnail: 'path/to/thumbnail5.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Sample Project 5',
       description: ['Brief description of sample project 5.'],
       tags: ['HTML', 'CSS', 'JavaScript'],
@@ -56,7 +56,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 6,
-      thumbnail: 'path/to/thumbnail6.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Sample Project 6',
       description: ['Brief description of sample project 6.'],
       tags: ['Python', 'Django', 'Machine Learning'],
@@ -65,7 +65,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 7,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Classification Brain Tumour Using Data Science Techniques',
       description: ['Allows users to upload MRI scans for analysis and receive tumour status.'],
       tags: ['Python', 'Data Science', 'SVM', 'CNN'],
@@ -74,7 +74,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 8,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'File Monitoring System for PROTEGER',
       description: ['Developed a real-time file monitoring system using React, Express.js, and Node.js.'],
       tags: ['React', 'Express.js', 'Node.js'],
@@ -83,7 +83,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 9,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Smart Lock for Baggage',
       description: ['Developed a smart baggage lock with a tracking system using Arduino and a GSM module.'],
       tags: ['Arduino', 'GSM Module', 'Google Place API', 'PHP'],
@@ -92,7 +92,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 10,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Supermarket Locator',
       description: ['Utilised Google Place API to display nearby supermarkets based on current location.'],
       tags: ['Android Studio', 'Java', 'Google Place API', 'Postman'],
@@ -101,7 +101,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 11,
-      thumbnail: 'path/to/thumbnail5.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Sample Project 5',
       description: ['Brief description of sample project 5.'],
       tags: ['HTML', 'CSS', 'JavaScript'],
@@ -110,7 +110,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 12,
-      thumbnail: 'path/to/thumbnail6.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Sample Project 6',
       description: ['Brief description of sample project 6.'],
       tags: ['Python', 'Django', 'Machine Learning'],
@@ -119,7 +119,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 13,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Classification Brain Tumour Using Data Science Techniques',
       description: ['Allows users to upload MRI scans for analysis and receive tumour status.'],
       tags: ['Python', 'Data Science', 'SVM', 'CNN'],
@@ -128,7 +128,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 14,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'File Monitoring System for PROTEGER',
       description: ['Developed a real-time file monitoring system using React, Express.js, and Node.js.'],
       tags: ['React', 'Express.js', 'Node.js'],
@@ -137,7 +137,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 15,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Smart Lock for Baggage',
       description: ['Developed a smart baggage lock with a tracking system using Arduino and a GSM module.'],
       tags: ['Arduino', 'GSM Module', 'Google Place API', 'PHP'],
@@ -146,7 +146,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 16,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Supermarket Locator',
       description: ['Utilised Google Place API to display nearby supermarkets based on current location.'],
       tags: ['Android Studio', 'Java', 'Google Place API', 'Postman'],
@@ -155,7 +155,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 17,
-      thumbnail: 'path/to/thumbnail5.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Sample Project 5',
       description: ['Brief description of sample project 5.'],
       tags: ['HTML', 'CSS', 'JavaScript'],
@@ -164,7 +164,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 18,
-      thumbnail: 'path/to/thumbnail6.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Sample Project 6',
       description: ['Brief description of sample project 6.'],
       tags: ['Python', 'Django', 'Machine Learning'],

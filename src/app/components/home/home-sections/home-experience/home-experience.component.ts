@@ -19,7 +19,7 @@ export class HomeExperienceComponent implements OnInit {
   experiences: Experience[] = [
     {
       company: 'DFN Technology',
-      logo: '../../../assets/images/company-logo/dfn.jpg',
+      logo: 'assets/images/company-logo/dfn.jpg',
       location: 'Colombo, Sri Lanka',
       position: 'Software Engineer',
       duration: 'Apr 2022 - Nov 2022',
@@ -30,7 +30,7 @@ export class HomeExperienceComponent implements OnInit {
     },
     {
       company: 'HCL Technologies',
-      logo: '../../../assets/images/company-logo/hcl.jpg',
+      logo: 'assets/images/company-logo/hcl.jpg',
       location: 'Colombo, Sri Lanka',
       position: 'Software Engineer',
       duration: 'Jun 2021 - Apr 2022',
@@ -41,7 +41,7 @@ export class HomeExperienceComponent implements OnInit {
     },
     {
       company: 'Squarecle Tech',
-      logo: '../../../assets/images/company-logo/squ.jpg',
+      logo: 'assets/images/company-logo/squ.jpg',
       location: 'Colombo, Sri Lanka',
       position: 'Internship',
       duration: 'Jul 2020 - Jan 2021',

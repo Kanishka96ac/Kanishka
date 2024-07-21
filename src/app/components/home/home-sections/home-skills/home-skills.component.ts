@@ -18,7 +18,7 @@ export class HomeSkillsComponent {
         { name: 'Express.js', logo: 'https://img.icons8.com/?size=100&id=WNoJgbzDr3i2&format=png&color=000000' },
         { name: 'HTML5', logo: 'https://img.icons8.com/color/60/html-5.png' },
         { name: 'CSS3', logo: 'https://img.icons8.com/color/60/css3.png' },
-        { name: 'jQuery', logo: '../../../../../assets/images/skills-logo/jquery.png' },
+        { name: 'jQuery', logo: 'assets/images/skills-logo/jquery.png' },
         { name: 'Bootstrap', logo: 'https://img.icons8.com/color/60/bootstrap.png' },
         { name: 'Python', logo: 'https://img.icons8.com/color/60/python.png' },
         { name: 'MySQL', logo: 'https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000' },
@@ -29,7 +29,7 @@ export class HomeSkillsComponent {
         { name: 'GitHub', logo: 'https://img.icons8.com/?size=100&id=g7P0iny5Rros&format=png&color=000000' },
         { name: 'AWS', logo: 'https://img.icons8.com/?size=100&id=33039&format=png&color=000000' },
         { name: 'Jira', logo: 'https://img.icons8.com/?size=100&id=oROcPah5ues6&format=png&color=000000' },
-        { name: 'Postman', logo: '../../../../../assets/images/skills-logo/Postman.png' }
+        { name: 'Postman', logo: 'assets/images/skills-logo/Postman.png' }
       ]
     }
   ];

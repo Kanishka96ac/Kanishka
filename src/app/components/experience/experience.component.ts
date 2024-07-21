@@ -19,7 +19,7 @@ export class ExperienceComponent implements OnInit {
   experiences: Experience[] = [
     {
       company: 'DFN Technology (PVT) LTD',
-      logo: '../../../assets/images/company-logo/dfn.jpg',
+      logo: 'assets/images/company-logo/dfn.jpg',
       location: 'Colombo, Sri Lanka',
       position: 'Full-Stack Software Engineer',
       period: 'Apr 2022 - Nov 2022',
@@ -34,7 +34,7 @@ export class ExperienceComponent implements OnInit {
     },
     {
       company: 'HCL Technologies Lanka',
-      logo: '../../../assets/images/company-logo/hcl.jpg',
+      logo: 'assets/images/company-logo/hcl.jpg',
       location: 'Colombo, Sri Lanka',
       position: 'Software Engineer',
       period: 'Jun 2021 - Apr 2022',
@@ -46,7 +46,7 @@ export class ExperienceComponent implements OnInit {
     },
     {
       company: 'SQUARECLE TECH (PVT) LTD',
-      logo: '../../../assets/images/company-logo/squ.jpg',
+      logo: 'assets/images/company-logo/squ.jpg',
       location: 'Colombo, Sri Lanka',
       position: 'Software Engineer Internship',
       period: 'Jul 2020 - Jan 2021',
@@ -58,7 +58,7 @@ export class ExperienceComponent implements OnInit {
     },
     {
       company: 'Delux Holidays',
-      logo: '../../../assets/images/company-logo/delux.jpg',
+      logo: 'assets/images/company-logo/delux.jpg',
       location: 'Colombo, Sri Lanka',
       position: 'Web Developer - Trainee',
       period: 'Mar 2019 - Sep 2019',
@@ -69,7 +69,7 @@ export class ExperienceComponent implements OnInit {
     },
     {
       company: 'Fiverr',
-      logo: '../../../assets/images/company-logo/fiverr.png',
+      logo: 'assets/images/company-logo/fiverr.png',
       location: 'Online',
       position: 'Freelancer',
       period: '2018',

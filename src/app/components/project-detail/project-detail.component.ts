@@ -21,7 +21,7 @@ export class ProjectDetailComponent implements OnInit {
   projects: Project[] = [
     {
       id: 1,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Classification Brain Tumour Using Data Science Techniques',
       description: [
         'Allows users to upload MRI scans for analysis and receive tumour status. This project involves advanced data science techniques such as Support Vector Machines (SVM) and Convolutional Neural Networks (CNN). Detailed analysis and classification reports are generated for each MRI scan uploaded by the user, helping medical professionals in their diagnosis.',
@@ -37,7 +37,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 2,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'File Monitoring System for PROTEGER',
       description: [
         'Developed a real-time file monitoring system using React, Express.js, and Node.js. This system continuously monitors file changes, logs activities, and alerts users of any unauthorized access. It also provides a comprehensive dashboard for managing and reviewing file activities.',
@@ -48,7 +48,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 3,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Smart Lock for Baggage',
       description: [
         'Developed a smart baggage lock with a tracking system using Arduino and a GSM module. This project includes real-time location tracking, remote lock/unlock features, and an alarm system. Users can track their baggage from anywhere in the world using a mobile app.',
@@ -59,7 +59,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 4,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Supermarket Locator',
       description: [
         'Utilised Google Place API to display nearby supermarkets based on current location. This application provides real-time navigation, distance calculations, and store details. It helps users find the nearest supermarkets quickly and efficiently.',
@@ -70,7 +70,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 5,
-      thumbnail: 'path/to/thumbnail5.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Sample Project 5',
       description: [
         'Brief description of sample project 5. This project includes various web development techniques using HTML, CSS, and JavaScript to create an interactive user experience.',
@@ -81,7 +81,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 6,
-      thumbnail: 'path/to/thumbnail6.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Sample Project 6',
       description: [
         'Brief description of sample project 6. This project involves building a machine learning model using Python and Django to predict user behavior based on historical data.',
@@ -92,7 +92,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 7,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Classification Brain Tumour Using Data Science Techniques',
       description: [
         'Allows users to upload MRI scans for analysis and receive tumour status. This project involves advanced data science techniques such as Support Vector Machines (SVM) and Convolutional Neural Networks (CNN). Detailed analysis and classification reports are generated for each MRI scan uploaded by the user, helping medical professionals in their diagnosis.',
@@ -108,7 +108,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 8,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'File Monitoring System for PROTEGER',
       description: [
         'Developed a real-time file monitoring system using React, Express.js, and Node.js. This system continuously monitors file changes, logs activities, and alerts users of any unauthorized access. It also provides a comprehensive dashboard for managing and reviewing file activities.',
@@ -119,7 +119,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 9,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Smart Lock for Baggage',
       description: [
         'Developed a smart baggage lock with a tracking system using Arduino and a GSM module. This project includes real-time location tracking, remote lock/unlock features, and an alarm system. Users can track their baggage from anywhere in the world using a mobile app.',
@@ -130,7 +130,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 10,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Supermarket Locator',
       description: [
         'Utilised Google Place API to display nearby supermarkets based on current location. This application provides real-time navigation, distance calculations, and store details. It helps users find the nearest supermarkets quickly and efficiently.',
@@ -141,7 +141,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 11,
-      thumbnail: 'path/to/thumbnail5.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Sample Project 5',
       description: [
         'Brief description of sample project 5. This project includes various web development techniques using HTML, CSS, and JavaScript to create an interactive user experience.',
@@ -152,7 +152,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 12,
-      thumbnail: 'path/to/thumbnail6.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Sample Project 6',
       description: [
         'Brief description of sample project 6. This project involves building a machine learning model using Python and Django to predict user behavior based on historical data.',
@@ -163,7 +163,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 13,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Classification Brain Tumour Using Data Science Techniques',
       description: [
         'Allows users to upload MRI scans for analysis and receive tumour status. This project involves advanced data science techniques such as Support Vector Machines (SVM) and Convolutional Neural Networks (CNN). Detailed analysis and classification reports are generated for each MRI scan uploaded by the user, helping medical professionals in their diagnosis.',
@@ -179,7 +179,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 14,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'File Monitoring System for PROTEGER',
       description: [
         'Developed a real-time file monitoring system using React, Express.js, and Node.js. This system continuously monitors file changes, logs activities, and alerts users of any unauthorized access. It also provides a comprehensive dashboard for managing and reviewing file activities.',
@@ -190,7 +190,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 15,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Smart Lock for Baggage',
       description: [
         'Developed a smart baggage lock with a tracking system using Arduino and a GSM module. This project includes real-time location tracking, remote lock/unlock features, and an alarm system. Users can track their baggage from anywhere in the world using a mobile app.',
@@ -201,7 +201,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 16,
-      thumbnail: '../../../../../assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Supermarket Locator',
       description: [
         'Utilised Google Place API to display nearby supermarkets based on current location. This application provides real-time navigation, distance calculations, and store details. It helps users find the nearest supermarkets quickly and efficiently.',
@@ -212,7 +212,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 17,
-      thumbnail: 'path/to/thumbnail5.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Sample Project 5',
       description: [
         'Brief description of sample project 5. This project includes various web development techniques using HTML, CSS, and JavaScript to create an interactive user experience.',
@@ -223,7 +223,7 @@ export class ProjectDetailComponent implements OnInit {
     },
     {
       id: 18,
-      thumbnail: 'path/to/thumbnail6.jpg',
+      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
       name: 'Sample Project 6',
       description: [
         'Brief description of sample project 6. This project involves building a machine learning model using Python and Django to predict user behavior based on historical data.',

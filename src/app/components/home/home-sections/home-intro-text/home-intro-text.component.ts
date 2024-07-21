@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class HomeIntroTextComponent {
 
   // Specify the file path for the CV
-  private cvPath: string = '../../../../../assets/cv/SE-Kanishka.docx'; // Path to the correct location of the CV
+  private cvPath: string = 'assets/cv/SE-Kanishka.docx'; // Path to the correct location of the CV
 
   downloadCV() {
     const link = document.createElement('a');

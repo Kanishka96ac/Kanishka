@@ -23,7 +23,7 @@ export class HomeContactComponent {
     // Access the form element directly
     const formElement = this.contactForm.nativeElement;
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formElement, 'YOUR_USER_ID')
+    emailjs.sendForm('service_2oiytaz', 'template_urbaw63', formElement, 'hJWHvxb1h8oMUhjzD')
       .then((result: EmailJSResponseStatus) => {
         this.successMessage = 'Your message has been sent successfully!';
         this.errorMessage = '';
@@ -34,11 +34,3 @@ export class HomeContactComponent {
       });
   }
 }
-
-
-
-
-  // // Replace with your actual EmailJS service ID, template ID, and user ID
-  // private serviceId = 'service_2oiytaz'; // Replace with your actual service ID
-  // private templateId = 'template_urbaw63'; // Replace with your actual template ID
-  // private userId = 'hJWHvxb1h8oMUhjzD'; // Replace with your actual public API key or user ID

@@ -18,7 +18,7 @@ export class HomeAcademicComponent implements OnInit {
   academics: Academic[] = [
     {
       institution: 'York St John University',
-      logo: '../../../assets/images/academic-logo/ysj-logo.png',
+      logo: 'assets/images/academic-logo/ysj-logo.png',
       degree: 'MS, Computer Science',
       duration: 'Jan 2023 - Mar 2024',
       grade: 'Merit Award',
@@ -26,7 +26,7 @@ export class HomeAcademicComponent implements OnInit {
     },
     {
       institution: 'Sheffield Hallam University',
-      logo: '../../../assets/images/academic-logo/shu.jpg',
+      logo: 'assets/images/academic-logo/shu.jpg',
       degree: 'BEng (Hons) in Software Engineering',
       duration: 'Feb 2016 - Oct 2018',
       grade: '2.1',
@@ -34,7 +34,7 @@ export class HomeAcademicComponent implements OnInit {
     },
     {
       institution: 'University of Kelaniya',
-      logo: '../../../assets/images/academic-logo/uok-logo.png',
+      logo: 'assets/images/academic-logo/uok-logo.png',
       degree: 'BSc in Physical Science',
       duration: 'Mar 2017 - Feb 2020',
       grade: 'Pass',
