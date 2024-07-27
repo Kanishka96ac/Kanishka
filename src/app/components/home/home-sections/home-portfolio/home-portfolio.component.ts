@@ -20,163 +20,92 @@ export class HomePortfolioComponent implements OnInit, OnDestroy {
   projects: Project[] = [
     {
       id: 1,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'Classification Brain Tumour Using Data Science Techniques',
-      description: ['Allows users to upload MRI scans for analysis and receive tumour status.'],
-      tags: ['Python', 'Data Science', 'SVM', 'CNN'],
-      demoLink: '#',
+      thumbnail: 'assets/images/project-thumbnails/kanishka-dp.png',
+      name: 'Portfolio - Kanishka',
+      description: ['Welcome to my portfolio site, an Angular-based showcase of my latest projects and professional achievements'],
+      tags: ['Angular', 'HTML5', 'CSS', 'TypeScript', 'JavaScript'],
+      demoLink: 'https://kanishka96ac.github.io/Kanishka/',
       moreLink: '#'
     },
+    
     {
       id: 2,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/proteger.png',
       name: 'File Monitoring System for PROTEGER',
-      description: ['Developed a real-time file monitoring system using React, Express.js, and Node.js.'],
-      tags: ['React', 'Express.js', 'Node.js'],
-      demoLink: '#',
+      description: ['A real-time file monitoring system using React, Express.js, and Node.js'],
+      tags: ['React', 'Express.js', 'Node.js','HTML5', 'CSS', 'Java'],
+      demoLink: 'https://kanishka96ac.github.io/proteger-web/',
       moreLink: '#'
     },
     {
       id: 3,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'Smart Lock for Baggage',
-      description: ['Developed a smart baggage lock with a tracking system using Arduino and a GSM module.'],
-      tags: ['Arduino', 'GSM Module', 'Google Place API', 'PHP'],
-      demoLink: '#',
+      thumbnail: 'assets/images/project-thumbnails/quick-qr.png',
+      name: 'Quick QR',
+      description: ['Quick QR, a versatile QR code generator app built with Node.js, designed to create custom QR codes quickly and efficiently for all your needs'],
+      tags: ['Node.js', 'JavaScript', 'HTML5', 'CSS'],
+      demoLink: 'http://16.16.220.221:3000/',
       moreLink: '#'
     },
     {
       id: 4,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'Supermarket Locator',
-      description: ['Utilised Google Place API to display nearby supermarkets based on current location.'],
-      tags: ['Android Studio', 'Java', 'Google Place API', 'Postman'],
+      thumbnail: 'assets/images/project-thumbnails/btumor.jpeg',
+      name: 'Classification Brain Tumour Using Data Science Techniques',
+      description: ['Allows users to upload MRI scans for analysis and receive tumour status'],
+      tags: ['Python', 'Data Science', 'SVM', 'CNN', 'Flask', 'JavaScript'],
       demoLink: '#',
       moreLink: '#'
     },
     {
       id: 5,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'Sample Project 5',
-      description: ['Brief description of sample project 5.'],
-      tags: ['HTML', 'CSS', 'JavaScript'],
-      demoLink: '#',
+      thumbnail: 'assets/images/project-thumbnails/solot.png',
+      name: 'Solo Traveler',
+      description: ['Solo Traveler: a travel destination website built with HTML5 and JavaScript for solo adventurers'],
+      tags: ['Python', 'Django', 'Machine Learning'],
+      demoLink: 'https://solo-traveler.s3.eu-north-1.amazonaws.com/index.html',
       moreLink: '#'
     },
     {
       id: 6,
       thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'Sample Project 6',
-      description: ['Brief description of sample project 6.'],
-      tags: ['Python', 'Django', 'Machine Learning'],
-      demoLink: '#',
+      name: 'Drum Kit',
+      description: ['DrumKit: a virtual drum kit application that lets you create music with just a few clicks'],
+      tags: ['HTML5', 'CSS3', 'JavaScript'],
+      demoLink: 'https://kanishka96ac.github.io/DrumKit/',
       moreLink: '#'
     },
     {
       id: 7,
       thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'Classification Brain Tumour Using Data Science Techniques',
-      description: ['Allows users to upload MRI scans for analysis and receive tumour status.'],
-      tags: ['Python', 'Data Science', 'SVM', 'CNN'],
-      demoLink: '#',
+      name: 'Dicee Challlenge Game',
+      description: ['Dicee Challenge Game: a fun, interactive dice game that brings excitement and competition to your fingertips'],
+      tags: ['HTML5', 'CSS3', 'JavaScript'],
+      demoLink: 'https://kanishka96ac.github.io/Dicee_Challenge/',
       moreLink: '#'
     },
     {
       id: 8,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'File Monitoring System for PROTEGER',
-      description: ['Developed a real-time file monitoring system using React, Express.js, and Node.js.'],
-      tags: ['React', 'Express.js', 'Node.js'],
-      demoLink: '#',
+      thumbnail: 'assets/images/project-thumbnails/olive.png',
+      name: 'Olive Oil Store',
+      description: ['A Vue.js-powered online ecommerce store specialising in premium olive oils'],
+      tags: ['Vue.js', 'Node.js', 'MongoDB', 'HTML5', 'CSS3', 'Firebase'],
+      demoLink: 'https://olive-v4ef.onrender.com/products',
       moreLink: '#'
     },
     {
       id: 9,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'Smart Lock for Baggage',
-      description: ['Developed a smart baggage lock with a tracking system using Arduino and a GSM module.'],
-      tags: ['Arduino', 'GSM Module', 'Google Place API', 'PHP'],
+      thumbnail: 'assets/images/project-thumbnails/supermarket.jpeg',
+      name: 'Supermarket Locator',
+      description: ['A user-friendly app designed to help users find nearby supermarkets quickly and easily'],
+      tags: ['Android Studio', 'Java', 'Google Place API', 'Postman'],
       demoLink: '#',
       moreLink: '#'
     },
     {
       id: 10,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'Supermarket Locator',
-      description: ['Utilised Google Place API to display nearby supermarkets based on current location.'],
-      tags: ['Android Studio', 'Java', 'Google Place API', 'Postman'],
-      demoLink: '#',
-      moreLink: '#'
-    },
-    {
-      id: 11,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'Sample Project 5',
-      description: ['Brief description of sample project 5.'],
-      tags: ['HTML', 'CSS', 'JavaScript'],
-      demoLink: '#',
-      moreLink: '#'
-    },
-    {
-      id: 12,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'Sample Project 6',
-      description: ['Brief description of sample project 6.'],
-      tags: ['Python', 'Django', 'Machine Learning'],
-      demoLink: '#',
-      moreLink: '#'
-    },
-    {
-      id: 13,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'Classification Brain Tumour Using Data Science Techniques',
-      description: ['Allows users to upload MRI scans for analysis and receive tumour status.'],
-      tags: ['Python', 'Data Science', 'SVM', 'CNN'],
-      demoLink: '#',
-      moreLink: '#'
-    },
-    {
-      id: 14,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'File Monitoring System for PROTEGER',
-      description: ['Developed a real-time file monitoring system using React, Express.js, and Node.js.'],
-      tags: ['React', 'Express.js', 'Node.js'],
-      demoLink: '#',
-      moreLink: '#'
-    },
-    {
-      id: 15,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/lock.png',
       name: 'Smart Lock for Baggage',
-      description: ['Developed a smart baggage lock with a tracking system using Arduino and a GSM module.'],
+      description: ['A smart baggage lock with a tracking system using Arduino and a GSM module.'],
       tags: ['Arduino', 'GSM Module', 'Google Place API', 'PHP'],
-      demoLink: '#',
-      moreLink: '#'
-    },
-    {
-      id: 16,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'Supermarket Locator',
-      description: ['Utilised Google Place API to display nearby supermarkets based on current location.'],
-      tags: ['Android Studio', 'Java', 'Google Place API', 'Postman'],
-      demoLink: '#',
-      moreLink: '#'
-    },
-    {
-      id: 17,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'Sample Project 5',
-      description: ['Brief description of sample project 5.'],
-      tags: ['HTML', 'CSS', 'JavaScript'],
-      demoLink: '#',
-      moreLink: '#'
-    },
-    {
-      id: 18,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
-      name: 'Sample Project 6',
-      description: ['Brief description of sample project 6.'],
-      tags: ['Python', 'Django', 'Machine Learning'],
       demoLink: '#',
       moreLink: '#'
     }
@@ -231,7 +160,7 @@ export class HomePortfolioComponent implements OnInit, OnDestroy {
   startAutoSlide() {
     this.intervalId = setInterval(() => {
       this.nextSlide();
-    }, 3000); // Change the interval time as needed
+    }, 6000); // Change the interval time as needed
   }
 
   openProjectDetail(project: Project): void {
