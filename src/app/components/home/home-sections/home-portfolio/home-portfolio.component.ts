@@ -181,7 +181,7 @@ export class HomePortfolioComponent implements OnInit, OnDestroy {
       moreLink: '#'
     }
   ];
-  
+
   visibleProjects: Project[] = [];
   currentIndex = 0;
   intervalId: any;
@@ -191,29 +191,41 @@ export class HomePortfolioComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.setVisibleProjects();
     this.startAutoSlide();
+    this.handleResize();
+    window.addEventListener('resize', this.handleResize.bind(this));
   }
 
   ngOnDestroy() {
     if (this.intervalId) {
       clearInterval(this.intervalId);
     }
+    window.removeEventListener('resize', this.handleResize.bind(this));
   }
 
-  setVisibleProjects() {
-    this.visibleProjects = this.projects.slice(this.currentIndex, this.currentIndex + 3);
-    if (this.visibleProjects.length < 3) {
-      this.visibleProjects = [...this.visibleProjects, ...this.projects.slice(0, 3 - this.visibleProjects.length)];
+  handleResize() {
+    const width = window.innerWidth;
+    if (width <= 768) {
+      this.setVisibleProjects(1); // Show one project at a time for mobile view
+    } else {
+      this.setVisibleProjects(3); // Show three projects at a time for larger screens
+    }
+  }
+
+  setVisibleProjects(count = 3) {
+    this.visibleProjects = this.projects.slice(this.currentIndex, this.currentIndex + count);
+    if (this.visibleProjects.length < count) {
+      this.visibleProjects = [...this.visibleProjects, ...this.projects.slice(0, count - this.visibleProjects.length)];
     }
   }
 
   nextSlide() {
     this.currentIndex = (this.currentIndex + 1) % this.projects.length;
-    this.setVisibleProjects();
+    this.handleResize();
   }
 
   prevSlide() {
     this.currentIndex = (this.currentIndex - 1 + this.projects.length) % this.projects.length;
-    this.setVisibleProjects();
+    this.handleResize();
   }
 
   startAutoSlide() {

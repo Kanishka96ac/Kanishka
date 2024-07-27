@@ -1,3 +1,8 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
 /* Academic Section */
 .academic-section {
   text-align: center;
@@ -13,6 +18,7 @@
   text-transform: uppercase;
 }
 
+/* Academic List */
 .academic-list {
   display: flex;
   justify-content: center;
@@ -20,6 +26,7 @@
   flex-wrap: wrap;
 }
 
+/* Academic Item */
 .academic-item {
   background-color: rgb(218, 242, 242);
   border: 1px solid #ddd;
@@ -108,27 +115,58 @@
   margin-left: 8px;
 }
 
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .academic-item {
+    max-width: 45vw; /* 2 items per row */
+  }
+}
+
 @media (max-width: 768px) {
   .academic-list {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .academic-item {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw;
   }
 
   .academic-logo {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .academic-info {
-      text-align: center;
+    text-align: center;
   }
 
   .academic-section .btn-info {
-      bottom: 10px; /* Adjust position for smaller screens */
-      right: 10px;  /* Adjust position for smaller screens */
+    bottom: 10px; /* Adjust position for smaller screens */
+    right: 10px;  /* Adjust position for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .academic-section h2 {
+    font-size: 2em;
+  }
+
+  .academic-heading h3, .academic-heading h4 {
+    font-size: 1.1em;
+  }
+
+  .academic-heading p, .academic-info p {
+    font-size: 0.8em;
+  }
+
+  .academic-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .grade {
+    font-size: 1.2rem;
   }
 }

@@ -1,16 +1,13 @@
-.home-container{
-    /* background: radial-gradient(circle, #6f42c1 0%, #362238 80%); */
-    padding-bottom: 0px;
-  }
-  
+.home-container {
+  padding-bottom: 0px;
+}
+
 /* Hero Section */
 .hero-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 2px;
-  /* background: linear-gradient(135deg, #6f42c1, #ff8c00); */
-  /* background: linear-gradient(135deg, #1b1c55, #9facbe); */
   color: #fff;
   min-height: 40vh;
   position: relative;
@@ -22,21 +19,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 85vW;
+  max-width: 85vw;
   width: 100%;
   margin: 0 auto;
   padding-top: 0px;
 }
 
 .intro-photo {
-  flex: 0 1 80vh;
+  flex: 0 1 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 5vw;
 }
 
 .intro-photo img {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
   border-radius: 0;
   box-shadow: none;
@@ -54,23 +52,21 @@
 }
 
 /**** hr Styles ****/
-/* Container to center the line */
 .line-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 12vh; /* Adjust as needed */
+  height: 12vh;
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
 
-/* Fancy Line style */
 .fancy-line {
   width: 100%;
-  height: 100px; /* Adjust as needed */
+  height: 100px;
   fill: none;
-  stroke: rgba(255, 0, 0, 0.7); /* Line color */
+  stroke: rgba(255, 0, 0, 0.7);
   stroke-width: 5;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
@@ -85,13 +81,67 @@
 
 @keyframes shine {
   0% {
-    stroke: rgba(255, 215, 0, 0.7); /* Initial shine color */
+    stroke: rgba(255, 215, 0, 0.7);
   }
   50% {
-    stroke: rgba(255, 0, 0, 0.7); /* Mid shine color */
+    stroke: rgba(255, 0, 0, 0.7);
   }
   100% {
-    stroke: rgba(33, 12, 150, 0.7); /* End shine color */
+    stroke: rgba(33, 12, 150, 0.7);
   }
 }
 
+/* Mobile and Tablet Adjustments */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-photo {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
+  .intro-photo img {
+    max-width: 100%;
+  }
+
+  .credentials-section {
+    display: none; /* Hide credentials section on mobile and tablets */
+  }
+}
+
+@media (max-width: 540px) {
+  .hero-section {
+    min-height: auto; /* Adjust height for very small screens */
+  }
+
+  .intro-photo {
+    flex: 0 1 auto; /* Allow photo to shrink on very small screens */
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-section {
+    padding-top: 0vh;
+  }
+
+  .intro-photo img {
+    max-width: 100%;
+  }
+
+  .intro-text {
+    padding-top: 0;
+  }
+
+  .credentials-section {
+    padding-top: 0;
+  }
+}

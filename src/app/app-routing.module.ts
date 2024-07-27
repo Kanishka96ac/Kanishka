@@ -13,8 +13,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
 
 const routes: Routes = [
-  {path: "", redirectTo: "home", pathMatch: "full"},
-  {path: "home", component: HomeComponent},
+  {path: "home", redirectTo: "", pathMatch: "full"},
+  {path: "", component: HomeComponent},
   {path: "academic", component: AcademicComponent},
   {path: "experience", component: ExperienceComponent},
   {path: "portfolio", component: PortfolioComponent},

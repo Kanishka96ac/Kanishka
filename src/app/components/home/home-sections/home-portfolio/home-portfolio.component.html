@@ -2,7 +2,7 @@
   <h1>Projects</h1>
   <div class="portfolio-container">
     <div class="portfolio-list">
-      <div class="portfolio-item" *ngFor="let project of visibleProjects">
+      <div class="portfolio-item" *ngFor="let project of visibleProjects; let i = index">
         <img [src]="project.thumbnail" [alt]="project.name" class="portfolio-thumbnail">
         <div class="portfolio-info">
           <h3>{{ project.name }}</h3>

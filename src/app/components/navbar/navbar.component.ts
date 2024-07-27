@@ -11,7 +11,7 @@ export class NavbarComponent {
   constructor(private router: Router) { }
 
   scrollToFragment(fragment: string) {
-    this.router.navigate(['/home'], { fragment: fragment }).then(() => {
+    this.router.navigate([''], { fragment: fragment }).then(() => {
       const element = document.getElementById(fragment);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });

@@ -4,7 +4,8 @@ html {
 
 body {
   padding-top: 56px; /* Adjust this based on your navbar height */
-  background: linear-gradient(135deg, #64768f, #010549);
+  /* background: linear-gradient(135deg, #64768f, #010549); */
+  background: linear-gradient(90deg, rgb(94, 51, 70) 0%, rgba(148,187,233,1) 100%);
 }
 
 .cdk-overlay-container {

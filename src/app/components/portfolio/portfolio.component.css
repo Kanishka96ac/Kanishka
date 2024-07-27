@@ -1,7 +1,9 @@
+/* General Styles */
 .portfolio-section {
   text-align: center;
   padding: 4vh;
   color: #343a40;
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 .portfolio-section h1 {
@@ -21,6 +23,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px; /* Adjust gap between items */
 }
 
 .portfolio-item {
@@ -36,7 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Ensure buttons are fixed at the bottom */
+  justify-content: space-between;
 }
 
 .portfolio-item:hover {
@@ -169,7 +172,7 @@
   background-color: #0056b3;
 }
 
-/* Modal overlay to cover the entire screen */
+/* Modal Styles */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -180,7 +183,6 @@
   z-index: 1000;
 }
 
-/* Ensure the body doesn't scroll when the modal is open */
 :host {
   overflow: hidden;
 }
@@ -294,4 +296,46 @@ body.modal-open {
 /* Hide the footer when the hidden class is applied */
 footer.hidden {
   display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .portfolio-item {
+    width: calc(33.33% - 20px); /* 3 items per row */
+  }
+}
+
+@media (max-width: 992px) {
+  .portfolio-item {
+    width: calc(50% - 20px); /* 2 items per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-item {
+    width: calc(100% - 20px); /* 1 item per row */
+  }
+  .portfolio-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-section h1 {
+    font-size: 2em;
+  }
+  .project-detail {
+    width: 95%;
+    padding: 10px;
+  }
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .project-thumbnail {
+    max-width: 120px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
