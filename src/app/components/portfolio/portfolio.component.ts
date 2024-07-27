@@ -57,7 +57,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 6,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/drum.jpg',
       name: 'Drum Kit',
       description: ['DrumKit: a virtual drum kit application that lets you create music with just a few clicks'],
       tags: ['HTML5', 'CSS3', 'JavaScript'],
@@ -66,7 +66,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       id: 7,
-      thumbnail: 'assets/images/project-thumbnails/project1.jpg',
+      thumbnail: 'assets/images/project-thumbnails/dicee.jpg',
       name: 'Dicee Challlenge Game',
       description: ['Dicee Challenge Game: a fun, interactive dice game that brings excitement and competition to your fingertips'],
       tags: ['HTML5', 'CSS3', 'JavaScript'],
